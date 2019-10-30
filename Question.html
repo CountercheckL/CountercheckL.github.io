@@ -2,19 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Question.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
     <title>Test</title>
   </head>
   <body>
-      <header class='navbar'>
-          <div class='container'>
-            <div class="navbar-brand navbar-right"> 
-             <span>Contact</span>
-             <span>Twitter</span> 
-            </div>
-          </div>
+      <header>
+          <nav class="navbar z-index:1 navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Invisitext!</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>         
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Git</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
       </header>
 
        <div class="splash-art">
@@ -23,35 +35,88 @@
         <span class="bg-text-subtitle">London, U.K</span>
       </div>
 
-      <div className="about">
-        <h2>About</h2>
-        <p> A creative and amiable person with a passion for learning new things. I’ve been 
-          teaching myself web development for a little over a year and am currently keen 
-          to see what I can pick up in a professional setting. I have X years of experience
-           working in various office environments (often in tech-orientated roles) and 
-           feel ready to move into a different occupation and industry. While working in
-            these environments I considered myself a quick-leaner who worked best in a
-             team-focused support role.
-            Ideally, I am looking for a junior developer role where I can further develop my skills.</p>
-      </div>
-
+      <div class="container">
+        <div class="about">
+          <h2>About</h2>
+          <p> A creative and amiable person with a passion for learning new things. I’ve been 
+            teaching myself web development for a little over a year and am currently keen 
+            to see what I can pick up in a professional setting. I have X years of experience
+            working in various office environments (often in tech-orientated roles) and 
+            feel ready to move into a different occupation and industry. While working in
+              these environments I considered myself a quick-leaner who worked best in a
+              team-focused support role.
+              Ideally, I am looking for a junior developer role where I can further develop my skills.</p>
+        </div>
+     
       <div className="project-list">
-        <h2>Projects</h2>
-        <div class="genreprompt">
-
-        </div>
-
-        <div class="sparrow">
-
-        </div>
+           <h2>Projects</h2>
+        <br />
+          <div class="card genreprompt">
+            <div class="row">
+            <div class="genreprompt-text col-md-6 col-sm-12">
+              <h5>Genreprompt</h5>  
+              <p>  
+                    This is a small mobile-first web application designed to help writers out who are 
+                    struggling with ideas for their next project. The user can select a genre of 
+                    choice from the list (or leave it as ‘random’) and the site will randomly 
+                    generate a set of story ideas from a collection of arrays, fitting them into 
+                    a template. The user also has the option to take notes on their idea in a 
+                    text-field and can save said notes into a .txt file using the button provided.
+                    The project is built in HTML, CSS and React, and uses Materialize for styling.
+                    This project is live! (Link here)
+                    (Hosted on Heroku)
+                    </p>           
+                </div>
+            <div class="genreprompt-image col-md-6 col-sm-12">
+              <img class="image-box" src="genre.png" />
+            </div>
+          </div>
+          </div>
+         <br />
+         <div class="sparrow card">
+            <div class="row">
+            <div class="sparrow-text col-md-6 col-sm-12">
+              <h5>Sparrow Environmental Ltd</h5>
+                <p>This is a company website designed for a waste management 
+                    organisation based in London. It is a two-page site, and 
+                    was designed with HTML, CSS, React and the Materialize framework.
+                      This project is not yet live, but will be hosted on Netlify.</p>
+                    </div>
+            <div class="sparrow-image col-md-6 col-sm-12">
+              <img class="image-box" src="genre.png" />
+            </div>
+          </div>
+          </div>
+         <br />
+         <div class="notepad card justify-content-around">
+           <div class="row">
+            <div class="notepad-text col-md-6 col-sm-12">
+                <h5>Writers' Notepad</h5>
+                <p>This is a simple full-stack project designed to help writers take 
+                    notes during Nanowrimo (or other writing events.) Each note can be 
+                    assigned a category and the app will automatically sort the projects 
+                    by said category. There are also ‘default’ categories to select,
+                     such as ‘world building,’ ‘characters’ and ‘locations.’ Notes are
+                      stored in a PostgreSQL database which communicates with Django.
+                    This app was built with HTML, CSS, React, Django, PostgreSQL and Bootstrap.
+                    This project is not live, but you can download it from github.com/43232</p>
+                </div>
+              <div class="notepad-image col-md-6 col-sm-12">
+              <img class="image-box" src="genre.png" />
+            </div>
+          </div>
+          </div>
+         <br />
       </div>
-
+    </div>
+  </div>
       <div class="foot">
         <p>Laurence Collins (2019)</p>
       </div>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  </body>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 
 
 
