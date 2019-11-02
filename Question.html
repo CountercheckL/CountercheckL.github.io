@@ -14,7 +14,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>         
               <div class="collapse navbar-collapse" id="navbarToggler">
-                  <ul class="navbar-nav ml-auto">
+                  <ul class="navbar-nav ml-auto justify-content-between">
                     <li class="nav-item">
                        <a class="nav-link contact" href="#">Contact</a>
                     </li>
@@ -39,9 +39,9 @@
           </div>
         </div>
 
-        <div class="modal fade text-center" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade text-center" id="SparrowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <img class="bigpicture" src="genre.png" />  
+              <img class="bigsparrow" src="sparrow large.png" />  
             </div>
           </div>
 
@@ -50,7 +50,6 @@
            <img class="bigpicture" src="genre.png" />  
           </div>
         </div>
-
 
        <div class="splash-art">
         <img class="splash" src="cc.jpg" />
@@ -106,7 +105,7 @@
                       This project is not yet live, but will be hosted on Netlify.</p>
                     </div>
             <div class="sparrow-image col-md-6 col-sm-12">
-              <img class="image-box" src="genre.png" />
+              <img data-toggle="modal" data-target="#SparrowModal" src="sparrow small.png" class="smoll-image" />
             </div>
           </div>
           </div>
@@ -134,6 +133,7 @@
     </div>
   </div>
       <div class="foot">
+        <br />
         <p>Laurence Collins (2019)</p>
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
