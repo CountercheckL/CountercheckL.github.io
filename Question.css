@@ -73,3 +73,35 @@ body {
 .card {
     padding: 3rem;
 }
+
+
+.smoll-image {
+    height: 20rem;
+    width: auto;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.smoll-image:hover {
+    transform: scale(1.1);
+}
+
+.modal-dialog {
+    left: -10rem;
+     
+}
+
+.bigpicture {
+    height: 40rem;
+    width: auto;    
+}
+
+.btn-primary {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.mail {
+    height: 2rem;
+    width: auto;
+}

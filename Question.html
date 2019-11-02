@@ -16,18 +16,41 @@
               <div class="collapse navbar-collapse" id="navbarToggler">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                       <a class="nav-link contact" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Twitter</a>
+                      <a class="nav-link" href="#"><img src="img/twitter.svg" /></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Git</a>
+                      <a class="nav-link" href="#"><img src="img/git.svg" /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img class="mail" src="img/mail.svg" /></a>
                     </li>
                   </ul>
                 </div>
               </nav>
       </header>
+
+      <!-- Modals -->
+        <div class="modal fade text-center" id="GenrepromptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <img class="bigpicture" src="genre.png" />  
+          </div>
+        </div>
+
+        <div class="modal fade text-center" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <img class="bigpicture" src="genre.png" />  
+            </div>
+          </div>
+
+        <div class="modal fade text-center" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+           <img class="bigpicture" src="genre.png" />  
+          </div>
+        </div>
+
 
        <div class="splash-art">
         <img class="splash" src="cc.jpg" />
@@ -62,13 +85,13 @@
                     generate a set of story ideas from a collection of arrays, fitting them into 
                     a template. The user also has the option to take notes on their idea in a 
                     text-field and can save said notes into a .txt file using the button provided.
-                    The project is built in HTML, CSS and React, and uses Materialize for styling.
+                    The project is built in HTML, CSS and React, and uses Materialize for styling.</p>
+                    <p>
                     This project is live! (Link here)
-                    (Hosted on Heroku)
-                    </p>           
+                    (Hosted on Heroku)</p>           
                 </div>
             <div class="genreprompt-image col-md-6 col-sm-12">
-              <img class="image-box" src="genre.png" />
+                <img data-toggle="modal" data-target="#GenrepromptModal" src="genre.png" class="smoll-image" />
             </div>
           </div>
           </div>
