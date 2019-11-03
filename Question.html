@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Question.css" />
     <title>Test</title>
@@ -9,33 +10,39 @@
   <body>
       <header>
           <nav class="navbar z-index:1 navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Invisitext!</a>
+              <a class="navbar-brand" href="#">.</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>         
               <div class="collapse navbar-collapse" id="navbarToggler">
                   <ul class="navbar-nav ml-auto justify-content-between">
                     <li class="nav-item">
-                       <a class="nav-link contact" href="#">Contact</a>
+                      <span class="nav-link hidden-desktop">Contact</span>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="img/twitter.svg" /></a>
+                      <a class="nav-link" href="https://twitter.com/HowtoreadUK">
+                        <img src="img/twitter.svg" />
+                        <span>Twitter</span>
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="img/git.svg" /></a>
+                      <a class="nav-link" href="https://github.com/CountercheckL"><img src="img/git.svg" />
+                      <span>Github</span>
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><img class="mail" src="img/mail.svg" /></a>
+                      <a class="nav-link" href="mailto:laurencecollins@hotmail.co.uk"><img class="mail" src="img/mail.svg" />
+                        <span>Email</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </nav>
       </header>
 
-      <!-- Modals -->
         <div class="modal fade text-center" id="GenrepromptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-            <img class="bigpicture" src="genre.png" />  
+            <img class="bigpicture" src="genreprompt.png" />  
           </div>
         </div>
 
@@ -45,14 +52,13 @@
             </div>
           </div>
 
-        <div class="modal fade text-center" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade text-center" id="ExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
            <img class="bigpicture" src="genre.png" />  
           </div>
         </div>
 
-       <div class="splash-art">
-        <img class="splash" src="cc.jpg" />
+       <div class="splash-container">
         <h2 class="bg-text-title">Laurence Collins</h2>
         <span class="bg-text-subtitle">London, U.K</span>
       </div>
@@ -60,14 +66,11 @@
       <div class="container">
         <div class="about">
           <h2>About</h2>
-          <p> A creative and amiable person with a passion for learning new things. I’ve been 
-            teaching myself web development for a little over a year and am currently keen 
-            to see what I can pick up in a professional setting. I have X years of experience
-            working in various office environments (often in tech-orientated roles) and 
-            feel ready to move into a different occupation and industry. While working in
-              these environments I considered myself a quick-leaner who worked best in a
-              team-focused support role.
-              Ideally, I am looking for a junior developer role where I can further develop my skills.</p>
+          <p>Hi! My name is Laurence, based in the U.K, and I’ve been teaching myself 
+            web development for a little over a year now.</p>
+            <p>Currently looking for my first professional role in the field, although I have already done 
+              some commerical work independantly.</p>
+          <p>In terms of tech, I'm familiar with HTML, CSS, Javascript, React, Python and Django.</p>
         </div>
      
       <div className="project-list">
@@ -75,56 +78,37 @@
         <br />
           <div class="card genreprompt">
             <div class="row">
-            <div class="genreprompt-text col-md-6 col-sm-12">
+            <div class="genreprompt-text col-lg-6 col-sm-12">
               <h5>Genreprompt</h5>  
-              <p>  
-                    This is a small mobile-first web application designed to help writers out who are 
+              <p>  This is a mobile-first web application designed to help writers out who are 
                     struggling with ideas for their next project. The user can select a genre of 
                     choice from the list (or leave it as ‘random’) and the site will randomly 
                     generate a set of story ideas from a collection of arrays, fitting them into 
-                    a template. The user also has the option to take notes on their idea in a 
-                    text-field and can save said notes into a .txt file using the button provided.
-                    The project is built in HTML, CSS and React, and uses Materialize for styling.</p>
-                    <p>
-                    This project is live! (Link here)
-                    (Hosted on Heroku)</p>           
+                    a template. I also added a button that lets the user save their 
+                    own notes into a .txt file.</p>
+                    <p>The project is built in HTML, CSS and React, and uses Materialize for styling.
+                      (Hosted on Heroku.)</p>
+                      <a href="http://genreprompt.co.uk">
+                        <button type="button" class="btn btn-info">This Project is Live!</button>
+                      </a>
                 </div>
-            <div class="genreprompt-image col-md-6 col-sm-12">
-                <img data-toggle="modal" data-target="#GenrepromptModal" src="genre.png" class="smoll-image" />
+            <div class="image-container col-lg-6 col-sm-12">
+                <img data-toggle="modal" data-target="#GenrepromptModal" src="genreprompt.png" class="smoll-image" />
             </div>
           </div>
           </div>
          <br />
          <div class="sparrow card">
             <div class="row">
-            <div class="sparrow-text col-md-6 col-sm-12">
+            <div class="sparrow-text col-lg-6 col-sm-12">
               <h5>Sparrow Environmental Ltd</h5>
                 <p>This is a company website designed for a waste management 
                     organisation based in London. It is a two-page site, and 
-                    was designed with HTML, CSS, React and the Materialize framework.
-                      This project is not yet live, but will be hosted on Netlify.</p>
-                    </div>
-            <div class="sparrow-image col-md-6 col-sm-12">
-              <img data-toggle="modal" data-target="#SparrowModal" src="sparrow small.png" class="smoll-image" />
-            </div>
-          </div>
-          </div>
-         <br />
-         <div class="notepad card justify-content-around">
-           <div class="row">
-            <div class="notepad-text col-md-6 col-sm-12">
-                <h5>Writers' Notepad</h5>
-                <p>This is a simple full-stack project designed to help writers take 
-                    notes during Nanowrimo (or other writing events.) Each note can be 
-                    assigned a category and the app will automatically sort the projects 
-                    by said category. There are also ‘default’ categories to select,
-                     such as ‘world building,’ ‘characters’ and ‘locations.’ Notes are
-                      stored in a PostgreSQL database which communicates with Django.
-                    This app was built with HTML, CSS, React, Django, PostgreSQL and Bootstrap.
-                    This project is not live, but you can download it from github.com/43232</p>
+                    was designed with HTML, CSS, React and the Materialize framework.</p>
+                      <button type="button" class="btn btn-secondary" disabled>Not Yet Live</button>
                 </div>
-              <div class="notepad-image col-md-6 col-sm-12">
-              <img class="image-box" src="genre.png" />
+            <div class="image-container col-lg-6 col-sm-12">
+              <img data-toggle="modal" data-target="#SparrowModal" src="sparrow small.png" class="smoll-image" />
             </div>
           </div>
           </div>
