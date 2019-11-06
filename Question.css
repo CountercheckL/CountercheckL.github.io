@@ -49,17 +49,20 @@ body {
 
 .bg-text-title {
     font-size: 3rem;
-    line-height: 4;
     font-weight: bold;
+    margin-top: 6rem;
   }
 
 .bg-text-subtitle {
     font-size: 2rem;
-    line-height: .5;
 }
 
 .card {
     margin-top: 1rem;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif; 
 }
 .about {
     padding: 4rem 6rem 2rem 6rem;
