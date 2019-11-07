@@ -13,4 +13,6 @@ $(window).on("load",function() {
       }).scroll(); //invokes scroll-handler on page-load
      });
 
-
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});

@@ -18,22 +18,19 @@
               <div class="collapse navbar-collapse" id="navbarToggler">
                   <ul class="navbar-nav ml-auto justify-content-between">
                     <li class="nav-item">
-                      <span class="nav-link hidden-desktop">Contact:</span>
+                      <span class="hidden-desktop bold">Scroll To...</span>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://twitter.com/HowtoreadUK">
-                        <img class="white" src="img/twitter.svg" />
-                        <span>Twitter</span>
-                      </a>
+                      <a class="nav-link" href="#about"><span>Contact</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://github.com/CountercheckL"><img src="img/git.svg" />
-                      <span>Github</span>
-                      </a>
+                      <a class="nav-link" href="#projects"><span>My Projects</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="mailto:laurencecollins@hotmail.co.uk"><img class="mail" src="img/mail.svg" />
-                        <span>Email</span>
+                      <span class="hidden-desktop bold">Or Visit...</span>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/CountercheckL"><span>My Github</span>
                       </a>
                     </li>
                   </ul>
@@ -63,21 +60,26 @@
         <h2 class="bg-text-title">Laurence Collins</h2>
         <h3 class="bg-text-subtitle">London, U.K</h3>
       </div>
-
       <div class="container">
         <div class="about">
-          <h2>About</h2>
+          <h2 id="about">About</h2>
           <br />
           <p>Welcome! My name is Laurence Collins, currently based in the U.K. I'm an avid learner who is interested in a wealth of 
           tech-focused subjects, and I’ve been teaching myself web development for a little
           over a year now. I'm currently looking for my first professional role in the field, although I have already done 
               some work independantly.</p>
           <p>In terms of tech, I'm familiar with HTML, CSS, Javascript, React, Python and Django.</p>
+          <br />
+          <a id="contact" href="mailto:laurencecollins@hotmail.co.uk">
+              <button type="button" class="btn btn-outline-primary btn-lg">
+                  <img src="img/mail.svg" class="icons" />
+                  <span class="space"></span>
+                  Contact Me</button> 
+          </a>    
         </div>
-      
-      <div class="project-list">
+      <div class="project-list" id="projects">
            <h2 class="fadein">Projects</h2>  
-           <br />
+           <hr />
           <div class="card genreprompt fadein">
             <div class="row">
             <div class="genreprompt-text col-lg-6 col-sm-12">
