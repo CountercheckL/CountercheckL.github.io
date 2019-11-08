@@ -15,10 +15,16 @@ body {
 
 }
 
+header {
+    overflow-y: auto;
+}
 .navbar {
     width: 100%;
     z-index: 5;
     text-align: left !important; 
+    position: fixed;
+    border-bottom: 4px solid #17a2b8;
+
 }
 
 .navbar-brand {
@@ -70,14 +76,13 @@ h2 {
 }
 
 .about {
-    padding: 4rem 6rem 2rem 6rem;
+    padding: 4rem 5rem 2rem 5rem;
 }  
 
 .btn-lg {
     height: 4rem;
     width: 15rem;
-    color: #17a2b8
-
+    color: #17a2b8;
 }
 
 .btn-outline-primary {
@@ -152,6 +157,6 @@ h2 {
 }
 
 .project-list {
-    padding-top: 2rem;
+    padding-top: 3rem;
 
 }
