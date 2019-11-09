@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Question.css" />
+    <link rel="stylesheet" href="Counter.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
     <title>Laurence Collins - Welcome</title>
   </head>
@@ -41,7 +41,7 @@
 
         <div class="modal fade text-center" id="GenrepromptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-            <img class="bigpicture" src="genreprompt.png" />  
+            <img class="biggenre" src="genreprompt.png" />  
           </div>
         </div>
 
@@ -51,12 +51,6 @@
             </div>
           </div>
 
-        <div class="modal fade text-center" id="ExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-           <img class="bigpicture" src="genre.png" />  
-          </div>
-        </div>
-
        <div class="splash-container">
         <h2 class="bg-text-title">Laurence Collins</h2>
         <h3 class="bg-text-subtitle">London, U.K</h3>
@@ -65,38 +59,38 @@
         <div class="about">
           <h2 id="about">About</h2>
           <br />
-          <p>Welcome! My name is Laurence Collins, currently based in the U.K. I'm an avid learner who is interested in a wealth of 
-          tech-focused subjects, and I’ve been teaching myself web development for a little
-          over a year now. I'm currently looking for my first professional role in the field, although I have already done 
-              some independant work.</p>
-          <p>In terms of tech, I'm familiar with HTML, CSS, Javascript, React, Python and Django.</p>
+          <p>Welcome! I'm an avid learner who is interested in a wealth of programming-focused subjects,
+            although my main focus at the moment is web development, which I have been learning 
+            for a little over a year. 
+            I'm currently looking for my first professional role, although I have already done 
+          some independant work.</p>
+          <p>As far as tech goes, I'm familiar with HTML, CSS, Javascript, React, Python and Django.</p>
         </div>
         <a id="contact" class="email"   href="mailto:laurencecollins@hotmail.co.uk">
           <button type="button" class="btn btn-outline-primary btn-lg fadein">
               <img src="img/mail.svg" class="icons" />
               <span class="space"></span>Contact Me</button></a>    
       <div class="project-list" id="projects">
-           <h2 class="fadein">Projects</h2>  
+           <h2 class="fadein">Recent Projects</h2>  
            <hr />
           <div class="card genreprompt fadein">
             <div class="row">
             <div class="genreprompt-text col-lg-6 col-sm-12">
               <h5>Genreprompt</h5>  
-              <p>  This is a mobile-first web application designed to help writers out who are 
-                    struggling with ideas for their next project. The user can select a genre of 
-                    choice from the list (or leave it as ‘random’) and the site will randomly 
-                    generate a set of story ideas from a collection of arrays, fitting them into 
-                    a template. I also added a button that lets the user save their 
-                    own notes into a .txt file.</p>
+              <p>  This is a simple website designed to help writers out who might be
+                    struggling with ideas for their next project. </p>
+                    <p>The user can select a genre of choice from the list (or pick ‘random’) 
+                      and the site will randomly generate a set of story ideas from a collection
+                      of arrays, fitting them into a template. </p>
                     <p>The project is built in HTML, CSS and React, and uses Materialize for styling.
                       (Hosted on Heroku.)</p>
-                      <a href="http://genreprompt.co.uk">
+                      <a href="http://genreprompt.co.uk" target="_blank">
                         <button type="button" class="btn btn-info">This Project is Live!</button>
                       </a>
                 </div>
             <div class="image-container col-lg-6 col-sm-12">
-                <img data-toggle="modal" data-target="#GenrepromptModal" src="genreprompt.png" class="bigscreens smoll-image" />
-                <img src="genreprompt.png" class="smallscreens smoll-image" />
+                <img data-toggle="modal" data-target="#GenrepromptModal" src="genreprompt.png" class="bigscreens small-image" />
+                <img src="genreprompt.png" class="smallscreens small-image" />
               </div>
           </div>
           </div>
@@ -105,15 +99,15 @@
             <div class="row">
             <div class="sparrow-text col-lg-6 col-sm-12">
               <h5>Sparrow Environmental Ltd</h5>
-                <p>This is a company website designed for a waste management 
-                    organisation based in London.</p>
+                <p>This is an upcoming company website designed for a new waste management 
+                    organisation based in Central London. </p>
                     <p>This is a two-page site, and was designed with HTML, CSS, React 
                       and the Materialize framework. </p>
                       <button type="button" class="btn btn-secondary" disabled>Not Yet Live</button>
                 </div>
             <div class="image-container col-lg-6 col-sm-12">
-              <img data-toggle="modal" data-target="#SparrowModal" src="sparrow medium.png" class="bigscreens smoll-image" />
-              <img src="sparrow medium.png" class="smallscreens smoll-image" />
+              <img data-toggle="modal" data-target="#SparrowModal" src="sparrow medium.png" class="bigscreens small-image" />
+              <img src="sparrow medium.png" class="smallscreens small-image" />
             </div>
           </div>
           </div>
@@ -127,7 +121,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="Question.js"></script> 
+      <script type="text/javascript" src="Counter.js"></script> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
     </body>
